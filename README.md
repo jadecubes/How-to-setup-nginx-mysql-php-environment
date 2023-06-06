@@ -33,12 +33,12 @@ ps -ef | grep mysql | grep -v grep | awk '{print $2}'
 pgrep -f mysql
 ```
 3. Kill if anyone is alive
-```console
+```sh
 kill 24024824082408   # change this number to what was returned in the grep 
 ```
 
 3. Removal and cleanup
-```console
+```sh
 brew remove mysql
 brew cleanup
 sudo rm /usr/local/mysql
@@ -61,7 +61,7 @@ https://stackoverflow.com/questions/100948/how-do-you-stop-mysql-on-a-mac-os-ins
 Make sure that it's removed completely and no mysql process is running. Install MySql after confirmation.  
  
 4.Another way to check if the process is running
-```console
+```sh
 d@DtekiMBP:/usr/local/etc/nginx|⇒  lsof -i:3306
 COMMAND    PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 mysqld    1590    d   21u  IPv4 0x3cc2e167c1c317f1      0t0  TCP localhost:mysql (LISTEN)
