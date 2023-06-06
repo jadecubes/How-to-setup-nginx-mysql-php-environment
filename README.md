@@ -21,7 +21,7 @@ Please refer to https://brew.sh/
 brew install mysql
 ```
 ### What are correct removal steps to remove installed mysql
-I had to remove previously installed mysql because I didn't use ==mysql_secure_installation== to change the default root's password. That is, I used ==mysql -u root== to change password and found that for some reason, the default account is forever locked and cannot be unlocked.
+I had to remove previously installed mysql because I didn't use ***mysql_secure_installation*** to change the default root's password. That is, I used ***mysql -u root*** to change password and found that for some reason, the default account is forever locked and cannot be unlocked.
 
 It takes skills to remove mysql thoroughly. 
 
@@ -101,8 +101,8 @@ php and php-fpm are together installed.
 brew install php
 ```
 ## The current progress
-Now, we are able to run MySQL, PHP, NGINX by ==brew services start mysql==, ==brew services start php==, ==brew services start nginx==.
-```console
+Now, we are able to run MySQL, PHP, NGINX by ***brew services start mysql***, ***brew services start php***, ***brew services start nginx***.
+```sh
 d@DtekiMBP:~|⇒  brew services list
 Name  Status  User File
 mysql started d    ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
