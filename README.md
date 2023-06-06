@@ -5,16 +5,17 @@ To buid an envrionment shown as below.
 Better not. With those services, it's difficult to update mysql, php, nginx individually.
 ## Install Brew
 Please refer to https://brew.sh/
-## Install MySQL
+## Info related to MySQL
+### Install MySQL
 ```shellscript
 brew install mysql
 ```
-## What are correct steps to be taken when you need to remove installed mysql
+### What are correct steps to be taken when you need to remove installed mysql
 I have to remove previously installed mysql because I didn't use mysql_secure_installation to change the password. That is, I use mysql -u root to change password. After that, for some reason, the default account is forever locked and cannot be unlocked.
 
 It takes skills to remove mysql thoroughly. 
 
-### Commands to remove mysql
+#### Commands to remove mysql
 1. Uninstall
 ```shellscript
 brew uninstall --force mysql
