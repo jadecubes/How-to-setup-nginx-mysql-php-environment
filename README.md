@@ -10,6 +10,7 @@ To buid an envrionment shown as below.
 3. Install PHP
 4. Install NGINX
 5. Modify nginx.conf
+6. download wordpress folder. If we can successfully browse wordpress config page, we achieve the goal.
 
 ## Should I use bundled services similar with MAMP?
 Better not. With those services, it's difficult to update mysql, php, nginx individually.
@@ -109,9 +110,28 @@ mysql started d    ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 nginx started d    ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 php   started root ~/Library/LaunchAgents/homebrew.mxcl.php.plist
 ```
+```sh
+d@DtekiMBP:/usr/local/etc/nginx|⇒  lsof -i:9000
+COMMAND  PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+php-fpm 9800    d    9u  IPv4 0xce29d1dffa82a0db      0t0  TCP localhost:cslistener (LISTEN)
+php-fpm 9808    d   10u  IPv4 0xce29d1dffa82a0db      0t0  TCP localhost:cslistener (LISTEN)
+php-fpm 9809    d   10u  IPv4 0xce29d1dffa82a0db      0t0  TCP localhost:cslistener (LISTEN)
+```
+
+```sh
+d@DtekiMBP:/usr/local/etc/nginx|⇒  lsof -i:3306
+COMMAND PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+mysqld  672    d    4u  IPv4 0xce29d1dffa84bd5b      0t0  TCP localhost:mysql (LISTEN)
+```
+
+```sh
+COMMAND   PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+nginx    7578    d    6u  IPv4 0xce29d1dff4c13d5b      0t0  TCP *:http-alt (LISTEN)
+nginx   10131    d    6u  IPv4 0xce29d1dff4c13d5b      0t0  TCP *:http-alt (LISTEN)
+```
 
 
-### The most dirty part: modification to nginx.conf
+### Here comes the most dirty part: modification to nginx.conf
 #### First goal: run nginx successfully
 #### Second goal: browse first page successfully
 
