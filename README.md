@@ -1,7 +1,8 @@
 # How to setup nginx, mysql, php environment on Mac
 ## Goal
 To buid an envrionment shown as below.
-[env](./final.png)
+
+[Env](./final.png)
 ## Should I use bundled services similar with MAMP?
 Better not. With those services, it's difficult to update mysql, php, nginx individually.
 ## Install Brew
