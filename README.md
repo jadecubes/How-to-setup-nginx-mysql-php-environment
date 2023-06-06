@@ -13,7 +13,7 @@ Please refer to https://brew.sh/
 brew install mysql
 ```
 ### What are correct steps to be taken when you need to remove installed mysql
-I have to remove previously installed mysql because I didn't use mysql_secure_installation to change the password. That is, I used mysql -u root to change password and found for some reason, the default account is forever locked and cannot be unlocked.
+I have to remove previously installed mysql because I didn't use mysql_secure_installation to change the default root's password. That is, I used mysql -u root to change password and found for some reason, the default account is forever locked and cannot be unlocked.
 
 It takes skills to remove mysql thoroughly. 
 
