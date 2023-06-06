@@ -17,11 +17,11 @@ It takes skills to remove mysql thoroughly.
 
 #### Commands to remove mysql
 1. Uninstall
-```console
+```sh
 brew uninstall --force mysql
 ```
 2. Find running instances
-```console
+```sh
 ps -ax | grep mysql | grep -v grep
 
 # OR for only the running `PID`
