@@ -65,7 +65,7 @@ sudo rm -rf /Library/Receipts/MySQL*
 sudo rm -rf /private/var/db/receipts/*mysql*
 ```
 ```
-Source: 
+References: 
 https://stackoverflow.com/questions/52161511/how-to-uninstall-mysql-5-6-when-installed-by-brew-on-macos
 https://stackoverflow.com/questions/100948/how-do-you-stop-mysql-on-a-mac-os-install
 ```
@@ -144,7 +144,7 @@ http{
 #### First goal: run nginx successfully
 We are already in this stage. If you need reload nginx.conf, you can use ***nginx -s reload***.
 ```
-Source:
+References:
 https://www.maxlist.xyz/2020/06/18/flask-nginx/
 https://www.cnblogs.com/huchong/p/10031523.html
 https://ld246.com/article/1563147639170
