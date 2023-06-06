@@ -78,5 +78,19 @@ TablePlus 1796    d   28u  IPv4 0x3cc2e167c21df691      0t0  TCP localhost:50189
 TablePlus 1796    d   33u  IPv4 0x3cc2e167c1d2fb71      0t0  TCP localhost:50731->localhost:mysql (ESTABLISHED)
 TablePlus 1796    d   35u  IPv4 0x3cc2e167c224aa11      0t0  TCP localhost:50193->localhost:mysql (ESTABLISHED)
 ```
+## Info related to php
+### Install php
+```console
+brew install php
+```
+php and php-fpm are together installed.
 
+## Info related to nginx
+### Install php
+```console
+brew install nginx
+```
+### The most dirty part: modification to nginx.conf
+#### First goal: run nginx successfully
+#### Second goal: browse first page successfully
 
