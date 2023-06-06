@@ -17,7 +17,7 @@ I have to remove previously installed mysql because I didn't use mysql_secure_in
 
 It takes skills to remove mysql thoroughly. 
 
-#### Commands to remove mysql
+### Commands to remove mysql
 1. Uninstall
 ```sh
 brew uninstall --force mysql
