@@ -60,6 +60,12 @@ https://stackoverflow.com/questions/100948/how-do-you-stop-mysql-on-a-mac-os-ins
 ```
 Make sure that it's removed completely and no mysql process is running. Install MySql after confirmation.  
  
-
+4.Another way to check if the process is running
+```console
+d@DtekiMBP:/usr/local/etc/nginx|⇒  lsof -i:8080             
+COMMAND   PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+nginx   30620    d    7u  IPv4 0x3cc2e167c1d45a11      0t0  TCP *:http-alt (LISTEN)
+nginx   30623    d    7u  IPv4 0x3cc2e167c1d45a11      0t0  TCP *:http-alt (LISTEN)
+```
 
 
