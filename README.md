@@ -151,7 +151,7 @@ https://stackoverflow.com/questions/25774999/nginx-stat-failed-13-permission-den
 
 
 ## Here comes the most dirty part: modification to nginx.conf
-Has-to-be-modified parts from nginx.conf are listed below.
+Have-to-be-modified parts from nginx.conf are listed below.
 ```sh
     server {
         listen       8080;
