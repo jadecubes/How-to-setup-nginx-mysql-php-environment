@@ -7,7 +7,7 @@ Better not. With those services, it's difficult to update mysql, php, nginx indi
 Please refer to https://brew.sh/
 ## Info related to MySQL
 ### Install MySQL
-```shellscript
+```console
 brew install mysql
 ```
 ### What are correct steps to be taken when you need to remove installed mysql
@@ -17,11 +17,11 @@ It takes skills to remove mysql thoroughly.
 
 #### Commands to remove mysql
 1. Uninstall
-```script
+```console
 brew uninstall --force mysql
 ```
 2. Find running instances
-```shellscript
+```console
 ps -ax | grep mysql | grep -v grep
 
 # OR for only the running `PID`
@@ -33,12 +33,12 @@ ps -ef | grep mysql | grep -v grep | awk '{print $2}'
 pgrep -f mysql
 ```
 3. Kill if anyone is alive
-```shellscript
+```console
 kill 24024824082408   # change this number to what was returned in the grep 
 ```
 
 3. Removal and cleanup
-```shellscript
+```console
 brew remove mysql
 brew cleanup
 sudo rm /usr/local/mysql
