@@ -151,12 +151,36 @@ https://stackoverflow.com/questions/25774999/nginx-stat-failed-13-permission-den
 
 
 ## Here comes the most dirty part: modification to nginx.conf
+Has-to-be-modified parts from nginx.conf are listed below.
+```sh
+    server {
+        listen       8080;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+        root /Users/d/wordpress; # the root of the whole website. Modify me!
+        index  index.html index.htm index.php; # the very first page of the website. Modify me!
+        
+        location ~ \.php$ { # This is a regular expression specifying a php file with prefix of the requested URL
+          try_files $uri = /404.html; # the inner content has to be added to nginx.conf to specify php-fpm to take and pare the requested php file. 
+          fastcgi_pass 127.0.0.1:9000;
+          fastcgi_index index.php;
+          fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+          include fastcgi_params;
+       }
+     }
+```
+
 
 ```
 References:
 https://nginx.org/en/docs/beginners_guide.html#fastcgi
 https://stackoverflow.com/questions/24704673/how-to-send-all-requests-through-fastcgi-with-nginx
+https://www.section.io/blog/debug-headers-best-practices/
 ```
 
 ## Second goal: browse first page successfully
+Browse http://localhost:8080, and you get the wordpress welcome page.
 
