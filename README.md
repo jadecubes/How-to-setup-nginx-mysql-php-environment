@@ -125,9 +125,18 @@ mysqld  672    d    4u  IPv4 0xce29d1dffa84bd5b      0t0  TCP localhost:mysql (L
 ```
 
 ```sh
+d@DtekiMBP:/usr/local/etc/nginx|⇒  lsof -i:8080
 COMMAND   PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 nginx    7578    d    6u  IPv4 0xce29d1dff4c13d5b      0t0  TCP *:http-alt (LISTEN)
 nginx   10131    d    6u  IPv4 0xce29d1dff4c13d5b      0t0  TCP *:http-alt (LISTEN)
+```
+```
+Note: we run nginx on port 8080. This port number is configurable in /usr/local/etc/nginx/nginx.conf on Mac, in 
+http{
+  server {
+     listen  8080;
+  }
+}
 ```
 
 
