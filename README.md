@@ -146,6 +146,7 @@ We are already in this stage. If you need reload nginx.conf, you can use ***ngin
 ```
 Source:
 https://www.maxlist.xyz/2020/06/18/flask-nginx/
+https://www.cnblogs.com/huchong/p/10031523.html
 ```
 #### Second goal: browse first page successfully
 
