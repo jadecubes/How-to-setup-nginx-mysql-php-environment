@@ -62,10 +62,21 @@ Make sure that it's removed completely and no mysql process is running. Install 
  
 4.Another way to check if the process is running
 ```console
-d@DtekiMBP:/usr/local/etc/nginx|⇒  lsof -i:8080             
-COMMAND   PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
-nginx   30620    d    7u  IPv4 0x3cc2e167c1d45a11      0t0  TCP *:http-alt (LISTEN)
-nginx   30623    d    7u  IPv4 0x3cc2e167c1d45a11      0t0  TCP *:http-alt (LISTEN)
+d@DtekiMBP:/usr/local/etc/nginx|⇒  lsof -i:3306
+COMMAND    PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+mysqld    1590    d   21u  IPv4 0x3cc2e167c1c317f1      0t0  TCP localhost:mysql (LISTEN)
+mysqld    1590    d   33u  IPv4 0x3cc2e167c21e6051      0t0  TCP localhost:mysql->localhost:50184 (ESTABLISHED)
+mysqld    1590    d   34u  IPv4 0x3cc2e167c1c281b1      0t0  TCP localhost:mysql->localhost:50187 (ESTABLISHED)
+mysqld    1590    d   36u  IPv4 0x3cc2e167c1c16051      0t0  TCP localhost:mysql->localhost:50188 (ESTABLISHED)
+mysqld    1590    d   38u  IPv4 0x3cc2e167c1d4a7f1      0t0  TCP localhost:mysql->localhost:50189 (ESTABLISHED)
+mysqld    1590    d   40u  IPv4 0x3cc2e167c204bcd1      0t0  TCP localhost:mysql->localhost:50193 (ESTABLISHED)
+mysqld    1590    d   42u  IPv4 0x3cc2e167c21fae31      0t0  TCP localhost:mysql->localhost:50731 (ESTABLISHED)
+TablePlus 1796    d   19u  IPv4 0x3cc2e167c2206b71      0t0  TCP localhost:50184->localhost:mysql (ESTABLISHED)
+TablePlus 1796    d   24u  IPv4 0x3cc2e167c220d051      0t0  TCP localhost:50187->localhost:mysql (ESTABLISHED)
+TablePlus 1796    d   26u  IPv4 0x3cc2e167c1ef37f1      0t0  TCP localhost:50188->localhost:mysql (ESTABLISHED)
+TablePlus 1796    d   28u  IPv4 0x3cc2e167c21df691      0t0  TCP localhost:50189->localhost:mysql (ESTABLISHED)
+TablePlus 1796    d   33u  IPv4 0x3cc2e167c1d2fb71      0t0  TCP localhost:50731->localhost:mysql (ESTABLISHED)
+TablePlus 1796    d   35u  IPv4 0x3cc2e167c224aa11      0t0  TCP localhost:50193->localhost:mysql (ESTABLISHED)
 ```
 
 
