@@ -150,5 +150,11 @@ https://ld246.com/article/1563147639170
 
 ## Here comes the most dirty part: modification to nginx.conf
 
+```
+References:
+https://nginx.org/en/docs/beginners_guide.html#fastcgi
+https://stackoverflow.com/questions/24704673/how-to-send-all-requests-through-fastcgi-with-nginx
+```
+
 ## Second goal: browse first page successfully
 
