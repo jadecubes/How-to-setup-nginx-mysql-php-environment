@@ -17,7 +17,7 @@ It takes skills to remove mysql thoroughly.
 
 #### Commands to remove mysql
 1. Uninstall
-```shellscript
+```script
 brew uninstall --force mysql
 ```
 2. Find running instances
