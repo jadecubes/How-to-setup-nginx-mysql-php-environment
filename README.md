@@ -146,6 +146,7 @@ https://www.maxlist.xyz/2020/06/18/flask-nginx/
 https://www.cnblogs.com/huchong/p/10031523.html
 https://ld246.com/article/1563147639170
 https://stackoverflow.com/questions/59568777/nginx-emerg-bind-to-0-0-0-08080-failed-48-address-already-in-use-on-mac
+https://stackoverflow.com/questions/25774999/nginx-stat-failed-13-permission-denied
 ```
 
 
