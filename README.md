@@ -3,6 +3,14 @@
 To buid an envrionment shown as below.
 
 [Env](./final.png)
+
+## Essential steps
+1. Install Brew
+2. Install MySQL
+3. Install PHP
+4. Install NGINX
+5. Modify nginx.conf
+
 ## Should I use bundled services similar with MAMP?
 Better not. With those services, it's difficult to update mysql, php, nginx individually.
 ## Install Brew
