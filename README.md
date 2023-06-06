@@ -142,5 +142,10 @@ http{
 
 ### Here comes the most dirty part: modification to nginx.conf
 #### First goal: run nginx successfully
+We are already in this stage. If you need reload nginx.conf, you can use ***nginx -s reload***.
+```
+Source:
+https://www.maxlist.xyz/2020/06/18/flask-nginx/
+```
 #### Second goal: browse first page successfully
 
