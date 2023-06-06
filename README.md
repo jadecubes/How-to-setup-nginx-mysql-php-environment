@@ -138,10 +138,7 @@ http{
   }
 }
 ```
-
-
-### Here comes the most dirty part: modification to nginx.conf
-#### First goal: run nginx successfully
+## First goal is achieved by starting services successfully
 We are already in this stage. If you need reload nginx.conf, you can use ***nginx -s reload***.
 ```
 References:
@@ -149,5 +146,9 @@ https://www.maxlist.xyz/2020/06/18/flask-nginx/
 https://www.cnblogs.com/huchong/p/10031523.html
 https://ld246.com/article/1563147639170
 ```
-#### Second goal: browse first page successfully
+
+
+## Here comes the most dirty part: modification to nginx.conf
+
+## Second goal: browse first page successfully
 
