@@ -10,7 +10,7 @@ To buid an envrionment shown as below.
 3. Install PHP
 4. Install NGINX
 5. Modify nginx.conf
-6. download wordpress folder. If we can successfully browse wordpress config page, we achieve the goal.
+6. Download wordpress folder. If we can successfully browse wordpress config page, we achieve the goal.
 
 ## Should I use bundled services similar with MAMP?
 Better not. With those services, it's difficult to update mysql, php, nginx individually.
