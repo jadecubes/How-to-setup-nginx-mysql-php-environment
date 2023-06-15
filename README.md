@@ -184,7 +184,7 @@ https://www.section.io/blog/debug-headers-best-practices/
 ## Second goal: browse first page successfully
 Browse http://localhost:8080, and you get the wordpress welcome page.
 
-##Extra bonus: setting up XDebug
+## Extra bonus: setting up XDebug
 ```
 References:
 https://www.youtube.com/watch?v=HrQWtbxY1Hs&t=595s
