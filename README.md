@@ -207,7 +207,7 @@ https://www.youtube.com/watch?v=HrQWtbxY1Hs&t=595s
         "xdebugSettings": {
             "max_data": -1
         }
-    }
+      }
     ]
 }
 ```
