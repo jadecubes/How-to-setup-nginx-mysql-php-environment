@@ -199,7 +199,7 @@ https://www.youtube.com/watch?v=HrQWtbxY1Hs&t=595s
     "version": "0.2.0",
     "configurations": [
         
-        {
+     {
         "name": "Listen for Xdebug",
         "type": "php",
         "request": "launch",
