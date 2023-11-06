@@ -190,3 +190,24 @@ References:
 https://www.youtube.com/watch?v=HrQWtbxY1Hs&t=595s
 ```
 
+```php
+// configuration in Visual Studio for PHP
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+        "name": "Listen for Xdebug",
+        "type": "php",
+        "request": "launch",
+        "port": 9003,
+        "xdebugSettings": {
+            "max_data": -1
+        }
+    }
+    ]
+}
+```
