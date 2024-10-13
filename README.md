@@ -97,9 +97,9 @@ brew install php
 php and php-fpm are together installed.
 
 ## Info Related to Nginx
-### Install Php
+### Install Nginx
 ```console
-brew install php
+brew install nginx
 ```
 ## The Current Progress
 Now, we are able to run MySQL, PHP, NGINX by ***brew services start mysql***, ***brew services start php***, ***brew services start nginx***.
