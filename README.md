@@ -1,10 +1,10 @@
-# How to setup nginx, mysql, php environment on Mac
+# How to Setup Nginx, Mysql, Php Environment on Mac
 ## Goal
 To buid an envrionment shown as below.
 
 [Env](./final.png)
 
-## Essential steps
+## Essential Steps
 1. Install Brew
 2. Install MySQL
 3. Install PHP
@@ -12,21 +12,21 @@ To buid an envrionment shown as below.
 5. Modify nginx.conf
 6. Download wordpress folder. If we can successfully browse wordpress config page, we achieve the goal.
 
-## Should I use bundled services similar with MAMP?
+## Should I Use Bundled Services Similar with MAMP?
 Better not. With those services, it's difficult to update mysql, php, nginx individually.
 ## Install Brew
 Please refer to https://brew.sh/
-## Info related to MySQL
+## Info Related to MySQL
 ### Install MySQL
 ```console
 brew install mysql
 ```
-### What are correct mysql removal steps
+### What Are Correct Mysql Removal Steps
 I had to remove previously installed mysql because I didn't use ***mysql_secure_installation*** to change the default root's password. That is, I used ***mysql -u root*** to change password and found that for some reason, the default account is forever locked and cannot be unlocked.
 
 It takes skills to remove mysql thoroughly. 
 
-#### Commands to remove mysql
+#### Commands to Remove Mysql
 1. Uninstall
 ```sh
 brew uninstall --force mysql
@@ -71,7 +71,7 @@ https://stackoverflow.com/questions/100948/how-do-you-stop-mysql-on-a-mac-os-ins
 ```
 Make sure that it's removed completely and no mysql process is running. Install MySql after confirmation.  
  
-5. Another way to check if the process is running
+5. Another Way to Check If the Process Is Running
 ```sh
 d@DtekiMBP:/usr/local/etc/nginx|⇒  lsof -i:3306
 COMMAND    PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
@@ -89,19 +89,19 @@ TablePlus 1796    d   28u  IPv4 0x3cc2e167c21df691      0t0  TCP localhost:50189
 TablePlus 1796    d   33u  IPv4 0x3cc2e167c1d2fb71      0t0  TCP localhost:50731->localhost:mysql (ESTABLISHED)
 TablePlus 1796    d   35u  IPv4 0x3cc2e167c224aa11      0t0  TCP localhost:50193->localhost:mysql (ESTABLISHED)
 ```
-## Info related to php
-### Install php
+## Info Related to Php
+### Install Php
 ```console
 brew install php
 ```
 php and php-fpm are together installed.
 
-## Info related to nginx
-### Install php
+## Info Related to Nginx
+### Install Php
 ```console
 brew install php
 ```
-## The current progress
+## The Current Progress
 Now, we are able to run MySQL, PHP, NGINX by ***brew services start mysql***, ***brew services start php***, ***brew services start nginx***.
 ```sh
 d@DtekiMBP:~|⇒  brew services list
@@ -138,7 +138,7 @@ http{
   }
 }
 ```
-## First goal is achieved by starting services successfully
+## First Goal Is Achieved by Starting Services Successfully
 We are already in this stage. If you need reload nginx.conf, you can use ***nginx -s reload***.
 ```
 References:
@@ -150,7 +150,7 @@ https://stackoverflow.com/questions/25774999/nginx-stat-failed-13-permission-den
 ```
 
 
-## Here comes the most dirty part: modification to nginx.conf
+## Here Comes the Most Dirty Part: Modification to nginx.conf
 Have-to-be-modified parts from nginx.conf are listed below.
 ```sh
     server {
@@ -181,7 +181,7 @@ https://stackoverflow.com/questions/24704673/how-to-send-all-requests-through-fa
 https://www.section.io/blog/debug-headers-best-practices/
 ```
 
-## Second goal: browse first page successfully
+## Second Goal: Growse First Page Successfully
 Browse http://localhost:8080, and you get the wordpress welcome page.
 
 ## Extra bonus: setting up XDebug
