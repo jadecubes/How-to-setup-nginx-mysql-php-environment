@@ -181,7 +181,7 @@ https://stackoverflow.com/questions/24704673/how-to-send-all-requests-through-fa
 https://www.section.io/blog/debug-headers-best-practices/
 ```
 
-## Second Goal: Growse First Page Successfully
+## Second Goal: Browse First Page Successfully
 Browse http://localhost:8080, and you get the wordpress welcome page.
 
 ## Extra bonus: setting up XDebug
